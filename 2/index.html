@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+
+  <head> 
+    <script src="http://code.angularjs.org/1.2.2/angular.js"></script>
+    <script src="http://code.angularjs.org/1.2.2/angular-animate.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body ng-controller="MainCtrl as main">
+  	<p>
+  		Supports Animations:
+  		<button ng-click="main.push()">Enter Animation</button>
+  		<button ng-click="main.pop()">Leave Animation</button>
+  		<hr>
+  		<ul ng-repeat="item in main.items">
+  			<li>{{item}}</li>
+  		</ul>
+  	</p>
+    
+  </body>
+</html>

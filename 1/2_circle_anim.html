@@ -1,0 +1,26 @@
+<html>
+	<style>
+		div {
+			transition: 0.6s;
+			border-radius: 500%;
+			height: 200px;
+			width: 200px;
+			background-color: blue;
+			display: inline-block;
+		}
+		.ng-hide {
+			background-color: green;
+			top: 5px;
+			left: 100px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+<body ng-app="ngAnimate">
+	<h1>Click checkbox to hide circle with color change
+		<input type="checkbox" ng-model="myCheck">
+	</h1>
+	<div ng-hide="myCheck">
+	</div>
+</body>
+</html>
